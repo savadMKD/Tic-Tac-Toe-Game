@@ -9,16 +9,20 @@ body {
     background: #56baed;
 }
 
-.select-box {
+.select-box, .play-board {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.select-box {
     background: #ffffff;
     padding: 20px 25px 25px;
     border-radius: 5%;
     max-width: 330px;
     width: 100%;
+    display: none;
 }
 
 .select-box header {
@@ -63,4 +67,68 @@ body {
 
 .options button.playerO {
     margin-left: 5px;
+}
+
+/* ----------------------- Play Board ------------------ */
+
+.play-board .details {
+    background: #fff;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.play-board .details .players {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.play-board .details span {
+    width: 100%;
+    color: #56baed;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: default;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.details span:first-child {
+    color: #fff;
+}
+
+.details .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #56baed;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.play-board .play-area {
+    margin-top: 20px;
+}
+
+.play-board section{
+    display: flex;
+}
+
+.play-board section span {
+    display: block;
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #56baed;
 }
