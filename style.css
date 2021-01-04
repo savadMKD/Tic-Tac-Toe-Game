@@ -22,7 +22,13 @@ body {
     border-radius: 5%;
     max-width: 330px;
     width: 100%;
-    /* display: none; */
+    transition: all 0.3s ease;
+}
+
+.select-box.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .select-box header {
