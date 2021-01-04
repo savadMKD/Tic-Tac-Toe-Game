@@ -113,6 +113,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 5;
+    transition: all 0.3s ease;
 }
 
 .details span:first-child {
@@ -128,6 +129,19 @@ body {
     background: #56baed;
     border-radius: 5px;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.players.active span:first-child{
+    color: #56baed;
+}
+
+.players.active span:nth-child(2){
+    color: #fff;
+}
+
+.players.active .slider{
+    left: 50%;
 }
 
 .play-board .play-area {
